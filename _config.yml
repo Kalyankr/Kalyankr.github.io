@@ -110,11 +110,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Active learner and intrested in Data"
   location         : "Dayton, Ohio"
-  email            :"kalyan.katla@gmail.com"
+  email            : kalyan.katla@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: mailto:kalyan.katla@email.com
+      url: mailto:kalyan.katla@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https:/Kalyankr/github.com/"
+      url: "https:/Kalyankr/github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
