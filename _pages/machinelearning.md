@@ -3,9 +3,10 @@ layout: archive
 permalink: /machine-learning/
 title: "Machine Learning post"
 author_profile: true
-#header:
-  #image:
+header:
+  image: "/images/kal.jpg"
 ---
+
 % include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
 
