@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /plans/
-title: "Preparation plans"
+title: "Plans"
 #author_profile: true
 header:
   #image: "/images/ds.png"
