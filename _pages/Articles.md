@@ -1,7 +1,6 @@
 ---
-layout: archive
-permalink: /articles/
 title: "Data Science interview questions"
+permalink: /articles/
 #author_profile: true
 header:
   #image: "/images/ds.png"
