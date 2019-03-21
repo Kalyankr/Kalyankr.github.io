@@ -1,9 +1,9 @@
 ---
 layout: archive
+permalink: /articles/
 title: "Data Science interview questions"
-permalink: /Articles/
 #author_profile: true
-#header:
+header:
   #image: "/images/ds.png"
 ---
 With Solutions:
