@@ -1,6 +1,7 @@
 ---
 title: "Data Science interview questions"
 permalink: /articles/
+layout: single
 #author_profile: true
 header:
   #image: "/images/ds.png"
