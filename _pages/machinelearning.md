@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: splash
 permalink: /machine-learning/
 title: "Machine Learning post"
 #author_profile: true
