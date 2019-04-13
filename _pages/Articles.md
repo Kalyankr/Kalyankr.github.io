@@ -4,7 +4,7 @@ permalink: /articles/
 layout: single
 #author_profile: true
 header:
-  #image: "/images/ds.png"
+  image: "/images/ds.png"
 ---
 With Solutions:
 
