@@ -1,8 +1,7 @@
 ---
 title: "About"
-layout: archive
+layout: about
 permalink: /about/
-header:
   #image: "/images/godofwar.jpg"
 ---
 I'm a Masters Graduate in Data science excels in Statistics, visualization, data analysis and developing Machine Learning models. Highly motivated towards the "Data".
