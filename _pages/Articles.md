@@ -1,7 +1,7 @@
 ---
-title: "Data Science interview questions"
+title: "Articles"
 permalink: /articles/
-layout: single
+#layout: single
 author_profile: true
 header:
   image: "/images/Data-Science_FB.jpeg"
