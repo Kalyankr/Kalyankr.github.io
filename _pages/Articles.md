@@ -6,6 +6,7 @@ author_profile: true
 header:
   #image: "/images/Data-Science_FB.jpeg"
 ---
+* Resource for learning Data science in effective and clean way, mostly for free [here](https://github.com/Kalyankr/FreeML)  
 ## With Solutions:
 * 111 Data Science Interview Questions & Detailed Answers: [link](https://rpubs.com/JDAHAN/172473)
 * 40 Interview Questions asked at Startups in Machine Learning / Data Science [link](https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science/)

@@ -108,8 +108,8 @@ analytics:
 author:
   name             : "Kalyan Reddy Katla"
   avatar           : "/images/my-profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Active Data learner and looking for Entry level DS positions"
-  location         : "Dayton, Ohio"
+  bio              : "Active Data learner and looking for Data Scientist positions"
+  location         : "San Fransico, CA"
   email            : kalyan.katla@gmail.com
   links:
     - label: "Email"
