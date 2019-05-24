@@ -4,7 +4,7 @@ permalink: /articles/
 layout: single
 #author_profile: true
 header:
-  image: "/images/ds.png"
+  image: "/images/Data-Science_FB.png"
 ---
 With Solutions:
 
