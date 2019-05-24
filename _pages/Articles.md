@@ -4,7 +4,7 @@ permalink: /articles/
 #layout: single
 author_profile: true
 header:
-  image: "/images/Data-Science_FB.jpeg"
+  #image: "/images/Data-Science_FB.jpeg"
 ---
 ## With Solutions:
 * 111 Data Science Interview Questions & Detailed Answers: [link](https://rpubs.com/JDAHAN/172473)

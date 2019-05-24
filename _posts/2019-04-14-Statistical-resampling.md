@@ -3,10 +3,7 @@ title: "Statistical Resampling"
 date: 2019-04-14
 tags: [Statistical learning, Resampling, Cross-validation, Beginner,Data science]
 header:
-  image: "/images/DFG.jpg"
-
-excerpt: "Statistical Learning, Beginner,Data science, Python"
-
+  #image: "/images/DFG.jpg"
 ---
 ## Resampling methods
 
