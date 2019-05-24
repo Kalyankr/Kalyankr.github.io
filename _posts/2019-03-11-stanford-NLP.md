@@ -3,7 +3,7 @@ title: "Natural Language Processing with Deep Learning applications"
 date: 2019-01-19
 tags: [NLP,Data science, Deep Learning, Tensorflow, Keras, Pytorch]
 header:
-  #image: "/images/kal.jpg"
+  image: "/images/DFG.jpg"
 ---
 ## Natural Language Processing with Deep Learning applications
 

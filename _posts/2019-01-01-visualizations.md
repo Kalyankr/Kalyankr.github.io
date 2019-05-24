@@ -3,7 +3,7 @@ title: "Learn Exploratory Data Analysis from Kaggle"
 date: 2019-01-19
 tags: [EDA, Visualization, Python]
 header:
-  #image: "/images/kal.jpg"
+  image: "/images/DFG.jpg"
 ---
 
 ## Top kernels for EDA/Visualization with Python:
