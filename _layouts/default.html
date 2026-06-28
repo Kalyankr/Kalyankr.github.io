@@ -1,25 +1,34 @@
----
-layout: base
----
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html -%}
+<body>
+  <div class="container">
+    <div class="layout">
 
-<div class="intro-header"></div>
+      <aside class="aside">
+        <img class="avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.author }}">
+        <div class="name">{{ site.author }}</div>
+        {% if site.role %}<div class="role">{{ site.role }}</div>{% endif %}
+        <nav class="social" aria-label="Social links">
+          {% if site.social.github != "" %}<a href="https://github.com/{{ site.social.github }}" title="GitHub" rel="me noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>{% endif %}
+          {% if site.social.medium != "" %}<a href="https://medium.com/@{{ site.social.medium }}" title="Medium" rel="me noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 12a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0zM20.5 12c0 3.4-1 6.1-2.2 6.1-1.2 0-2.2-2.7-2.2-6.1s1-6.1 2.2-6.1c1.2 0 2.2 2.7 2.2 6.1zM23.5 12c0 3-.4 5.5-1 5.5s-1-2.5-1-5.5.4-5.5 1-5.5 1 2.5 1 5.5z"/></svg></a>{% endif %}
+          {% if site.social.linkedin != "" %}<a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" title="LinkedIn" rel="me noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V8h3v11zM6.5 6.7a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zM19 19h-3v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.4.6-1.7 1.2-.1.2-.1.5-.1.8V19h-3V8h3v1.5c.4-.6 1.1-1.5 2.7-1.5 2 0 3.5 1.3 3.5 4.1V19z"/></svg></a>{% endif %}
+          {% if site.social.kaggle != "" %}<a href="https://www.kaggle.com/{{ site.social.kaggle }}" title="Kaggle" rel="me noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.1 21.9c0 .1-.1.2-.3.2h-2.4c-.2 0-.3-.1-.4-.2l-4.6-5.9-1.3 1.2v4.6c0 .2-.1.3-.3.3H7c-.2 0-.3-.1-.3-.3V2.1c0-.2.1-.3.3-.3h1.8c.2 0 .3.1.3.3v12.4l5.7-5.8c.1-.1.2-.2.4-.2h2.5c.2 0 .3.1.3.2 0 .1 0 .2-.1.3l-6 5.8 6.1 7.5c0 .1.1.2.1.3z"/></svg></a>{% endif %}
+          {% if site.social.scholar != "" %}<a href="https://scholar.google.com/citations?user={{ site.social.scholar }}" title="Google Scholar" rel="me noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.3l-7 3.8-7-3.8z"/></svg></a>{% endif %}
+          {% if site.email != "" %}<a href="mailto:{{ site.email }}" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.5L4.5 7h15L12 12.5zM4 8.7V17h16V8.7l-8 5.3-8-5.3z"/></svg></a>{% endif %}
+          {% if site.resume != "" %}<a href="{{ site.resume | relative_url }}" title="CV" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6V2zm7 1.5V7h3.5L13 3.5zM8 12h8v1.5H8V12zm0 3h8v1.5H8V15zm0-6h5v1.5H8V9z"/></svg></a>{% endif %}
+        </nav>
+      </aside>
 
-<main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
-  {% if page.before-content %}
-    <div class="before-content">
-      {% for file in page.before-content %}
-        {% include {{ file }} %}
-      {% endfor %}
+      <main class="main">
+        {{ content }}
+        <footer class="site-footer">
+          <span>© {{ site.time | date: "%Y" }} {{ site.author }}</span>
+          <span>Built with <a href="https://jekyllrb.com/" rel="noopener" target="_blank">Jekyll</a></span>
+        </footer>
+      </main>
+
     </div>
-  {% endif %}
-
-  {{ content }}
-
-  {% if page.after-content %}
-    <div class="after-content">
-      {% for file in page.after-content %}
-        {% include {{ file }} %}
-      {% endfor %}
-    </div>
-  {% endif %}
-</main>
+  </div>
+</body>
+</html>

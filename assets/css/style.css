@@ -1,0 +1,122 @@
+/* ===== Kalyan Reddy Katla — minimal theme ===== */
+:root {
+  --text: #24292f;
+  --muted: #6b7280;
+  --heading: #111418;
+  --link: #2563eb;
+  --border: #e7e9ec;
+  --chip: #f3f4f6;
+  --bg: #ffffff;
+  --maxw: 980px;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: var(--maxw); margin: 0 auto; padding: 3.4rem 1.4rem 4rem; }
+
+/* ---- Layout: main + aside ---- */
+.layout { display: grid; gap: 2.6rem; grid-template-columns: 1fr; }
+
+@media (min-width: 820px) {
+  .layout { grid-template-columns: minmax(0, 1fr) 210px; align-items: start; }
+  .main { grid-column: 1; grid-row: 1; }
+  .aside { grid-column: 2; grid-row: 1; position: sticky; top: 2.4rem; }
+}
+
+/* ---- Aside / profile card ---- */
+.aside { text-align: center; }
+@media (min-width: 820px) { .aside { text-align: left; } }
+
+.avatar {
+  width: 150px; height: 150px; border-radius: 50%;
+  object-fit: cover; display: block; margin: 0 auto 1rem;
+  border: 1px solid var(--border);
+}
+@media (min-width: 820px) { .avatar { margin-left: 0; } }
+
+.aside .name { font-weight: 650; font-size: 1.05rem; color: var(--heading); margin: 0 0 .15rem; }
+.aside .role { color: var(--muted); font-size: .9rem; margin: 0 0 1rem; }
+
+.social { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; }
+@media (min-width: 820px) { .social { justify-content: flex-start; } }
+.social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border: 1px solid var(--border);
+  border-radius: 9px; color: var(--muted); transition: all .15s ease;
+}
+.social a:hover { color: var(--heading); border-color: #cfd4da; transform: translateY(-1px); text-decoration: none; }
+.social svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* ---- Intro ---- */
+.intro h1 { font-size: 2.05rem; line-height: 1.2; letter-spacing: -.021em; color: var(--heading); margin: 0 0 .35rem; }
+.intro .tagline { color: var(--muted); font-size: 1.07rem; margin: 0 0 1.3rem; }
+.intro-bio { font-size: 1.04rem; }
+.intro-bio p { margin: 0 0 1rem; }
+
+/* ---- Section title ---- */
+.section-title {
+  font-size: .78rem; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--muted); font-weight: 650;
+  margin: 2.8rem 0 .4rem; padding-bottom: .55rem; border-bottom: 1px solid var(--border);
+}
+
+/* ---- Posts list ---- */
+.posts { list-style: none; margin: 0; padding: 0; }
+.posts li { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.posts li:last-child { border-bottom: 0; }
+.posts .date { display: block; color: var(--muted); font-size: .8rem; margin-bottom: .2rem; }
+.posts a.title { font-size: 1.1rem; font-weight: 620; color: var(--heading); }
+.posts a.title:hover { color: var(--link); }
+.posts .desc { color: var(--muted); font-size: .96rem; margin-top: .2rem; }
+
+.tags { margin-top: .5rem; }
+.tag {
+  display: inline-block; font-size: .72rem; color: var(--muted);
+  background: var(--chip); border-radius: 6px; padding: .12rem .5rem; margin: 0 .3rem .3rem 0;
+}
+
+/* ---- Prose (posts & pages) ---- */
+.prose { font-size: 1.04rem; }
+.prose h1 { font-size: 1.95rem; line-height: 1.2; letter-spacing: -.02em; color: var(--heading); margin: 0 0 .3rem; }
+.post-meta { color: var(--muted); font-size: .85rem; margin: 0 0 2rem; }
+.prose h2 { font-size: 1.35rem; color: var(--heading); margin: 2.1rem 0 .6rem; }
+.prose h3 { font-size: 1.12rem; color: var(--heading); margin: 1.6rem 0 .5rem; }
+.prose p, .prose ul, .prose ol { margin: 0 0 1.1rem; }
+.prose ul, .prose ol { padding-left: 1.3rem; }
+.prose li { margin: .3rem 0; }
+.prose img { max-width: 100%; height: auto; border-radius: 10px; }
+.prose a { text-decoration: underline; text-underline-offset: 2px; }
+.prose blockquote { margin: 0 0 1.1rem; padding: .3rem 1rem; border-left: 3px solid var(--border); color: var(--muted); }
+.prose code { background: var(--chip); padding: .12rem .38rem; border-radius: 5px; font-size: .9em; }
+.prose pre { background: #0f172a; color: #e2e8f0; padding: 1rem 1.1rem; border-radius: 10px; overflow: auto; font-size: .88rem; line-height: 1.5; }
+.prose pre code { background: none; padding: 0; color: inherit; }
+.prose table { border-collapse: collapse; width: 100%; margin: 0 0 1.1rem; font-size: .96rem; }
+.prose th, .prose td { border: 1px solid var(--border); padding: .5rem .7rem; text-align: left; }
+.prose th { background: #fafbfc; }
+
+.back { display: inline-block; margin-bottom: 1.4rem; color: var(--muted); font-size: .9rem; }
+.back:hover { color: var(--heading); text-decoration: none; }
+
+/* ---- Footer ---- */
+.site-footer {
+  margin-top: 3.5rem; padding-top: 1.4rem; border-top: 1px solid var(--border);
+  color: var(--muted); font-size: .84rem;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem;
+}
+.site-footer a { color: var(--muted); text-decoration: underline; }
