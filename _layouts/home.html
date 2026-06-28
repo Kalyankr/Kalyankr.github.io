@@ -2,8 +2,6 @@
 layout: default
 ---
 <section class="intro">
-  <h1>{{ page.heading | default: site.author }}</h1>
-  {% if page.tagline %}<p class="tagline">{{ page.tagline }}</p>{% endif %}
   {% if content != "" %}<div class="prose intro-bio">{{ content }}</div>{% endif %}
 </section>
 

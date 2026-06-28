@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 150" role="img" aria-label="LocalCowork ReAct loop">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#c4c9d0"/>
+    </marker>
+    <style>
+      .b{fill:#fff;stroke:#e7e9ec;stroke-width:1.5}
+      .ac{fill:#eff4ff;stroke:#2563eb;stroke-width:1.5}
+      .t{font:600 14px -apple-system,Segoe UI,Roboto,sans-serif;fill:#24292f}
+      .s{font:12px -apple-system,Segoe UI,Roboto,sans-serif;fill:#6b7280}
+      text{text-anchor:middle}
+      line,path.l{stroke:#c4c9d0;stroke-width:1.5;fill:none}
+    </style>
+  </defs>
+  <text class="s" x="475" y="16">loop until the task is done</text>
+  <path class="l" d="M665 70 C665 26 285 26 285 70" marker-end="url(#a)"/>
+  <rect class="b" x="20"  y="70" width="150" height="58" rx="10"/>
+  <text class="t" x="95"  y="104">Request</text>
+  <rect class="b" x="210" y="70" width="150" height="58" rx="10"/>
+  <text class="t" x="285" y="95">Think</text>
+  <text class="s" x="285" y="113">Ollama model</text>
+  <rect class="b" x="400" y="70" width="150" height="58" rx="10"/>
+  <text class="t" x="475" y="95">Act</text>
+  <text class="s" x="475" y="113">shell · python · web</text>
+  <rect class="ac" x="590" y="70" width="150" height="58" rx="10"/>
+  <text class="t" x="665" y="104">Observe</text>
+  <line x1="172" y1="99" x2="208" y2="99" marker-end="url(#a)"/>
+  <line x1="362" y1="99" x2="398" y2="99" marker-end="url(#a)"/>
+  <line x1="552" y1="99" x2="588" y2="99" marker-end="url(#a)"/>
+</svg>

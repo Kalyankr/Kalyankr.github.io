@@ -34,9 +34,9 @@ a:hover { text-decoration: underline; }
 .layout { display: grid; gap: 2.6rem; grid-template-columns: 1fr; }
 
 @media (min-width: 820px) {
-  .layout { grid-template-columns: minmax(0, 1fr) 210px; align-items: start; }
-  .main { grid-column: 1; grid-row: 1; }
-  .aside { grid-column: 2; grid-row: 1; position: sticky; top: 2.4rem; }
+  .layout { grid-template-columns: 210px minmax(0, 1fr); align-items: start; }
+  .aside { grid-column: 1; grid-row: 1; position: sticky; top: 2.4rem; }
+  .main { grid-column: 2; grid-row: 1; }
 }
 
 /* ---- Aside / profile card ---- */
@@ -60,6 +60,10 @@ a:hover { text-decoration: underline; }
 .social a:hover { color: var(--heading); border-color: #cfd4da; transform: translateY(-1px); text-decoration: none; }
 .social svg { width: 18px; height: 18px; fill: currentColor; }
 
+.nav { margin-top: 1rem; display: flex; gap: 1.1rem; justify-content: center; }
+.nav a { color: var(--muted); font-size: .92rem; }
+.nav a:hover { color: var(--heading); }
+
 /* ---- Intro ---- */
 .intro h1 { font-size: 2.05rem; line-height: 1.2; letter-spacing: -.021em; color: var(--heading); margin: 0 0 .35rem; }
 .intro .tagline { color: var(--muted); font-size: 1.07rem; margin: 0 0 1.3rem; }
@@ -73,14 +77,27 @@ a:hover { text-decoration: underline; }
   margin: 2.8rem 0 .4rem; padding-bottom: .55rem; border-bottom: 1px solid var(--border);
 }
 
-/* ---- Posts list ---- */
-.posts { list-style: none; margin: 0; padding: 0; }
-.posts li { padding: 1rem 0; border-bottom: 1px solid var(--border); }
-.posts li:last-child { border-bottom: 0; }
-.posts .date { display: block; color: var(--muted); font-size: .8rem; margin-bottom: .2rem; }
-.posts a.title { font-size: 1.1rem; font-weight: 620; color: var(--heading); }
-.posts a.title:hover { color: var(--link); }
-.posts .desc { color: var(--muted); font-size: .96rem; margin-top: .2rem; }
+/* ---- Posts list (cards) ---- */
+.posts { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.posts li {
+  position: relative;
+  padding: 1.15rem 1.3rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease;
+}
+.posts li:hover {
+  border-color: #d7dbe0;
+  box-shadow: 0 6px 22px rgba(17, 20, 24, .08);
+  transform: translateY(-2px);
+}
+.posts .date { display: block; color: var(--muted); font-size: .8rem; margin-bottom: .25rem; }
+.posts a.title { font-size: 1.1rem; font-weight: 620; color: var(--heading); transition: color .15s ease; }
+.posts li:hover a.title { color: var(--link); }
+/* stretch the title link so the whole card is clickable */
+.posts a.title::after { content: ""; position: absolute; inset: 0; border-radius: 12px; }
+.posts .desc { color: var(--muted); font-size: .96rem; margin-top: .25rem; }
 
 .tags { margin-top: .5rem; }
 .tag {

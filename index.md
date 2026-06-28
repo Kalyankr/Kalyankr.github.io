@@ -3,7 +3,6 @@ layout: home
 tagline: "Data science, machine learning, and Kaggle notes."
 ---
 
-Hi, I'm **Kalyan Reddy Katla** — a data science and machine learning enthusiast. I
-write about statistical learning, deep learning, NLP, and exploratory data analysis,
-and I share notes from Kaggle competitions. I enjoy turning data into insights and
-building models that generalize.
+I love working on data science, machine learning, robotics, and AI. I'm fascinated by
+how machines can learn from data, perceive the world, and make decisions. I love
+turning that curiosity into things that actually work.
