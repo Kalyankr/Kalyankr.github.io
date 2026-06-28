@@ -41,20 +41,17 @@ a:hover { text-decoration: underline; }
 
 /* ---- Aside / profile card ---- */
 .aside { text-align: center; }
-@media (min-width: 820px) { .aside { text-align: left; } }
 
 .avatar {
   width: 150px; height: 150px; border-radius: 50%;
   object-fit: cover; display: block; margin: 0 auto 1rem;
   border: 1px solid var(--border);
 }
-@media (min-width: 820px) { .avatar { margin-left: 0; } }
 
 .aside .name { font-weight: 650; font-size: 1.05rem; color: var(--heading); margin: 0 0 .15rem; }
 .aside .role { color: var(--muted); font-size: .9rem; margin: 0 0 1rem; }
 
 .social { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; }
-@media (min-width: 820px) { .social { justify-content: flex-start; } }
 .social a {
   display: inline-flex; align-items: center; justify-content: center;
   width: 36px; height: 36px; border: 1px solid var(--border);
